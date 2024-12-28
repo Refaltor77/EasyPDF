@@ -1,0 +1,32 @@
+{
+    "name": "elysio/easy-pdf",
+    "description": "Library for creating PDFs with Blade templates and a highly performant tool.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "elysio\\easypdf\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Elysio Martins",
+            "email": "elysiomartinspro@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "mpdf/mpdf": "^8.2",
+        "eftec/bladeone": "^4.16"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.7"
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
